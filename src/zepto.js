@@ -948,3 +948,4 @@ var Zepto = (function() {
 // If `$` is not yet defined, point it to `Zepto`
 window.Zepto = Zepto
 window.$ === undefined && (window.$ = Zepto)
+window.jQuery === undefined && (window.jQuery = Zepto)
