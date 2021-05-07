@@ -27,6 +27,9 @@ You will need Node.js installed on your system.
 $ npm install
 $ npm run-script dist
 
+# ezoic: should run with these modules
+$ MODULES="zepto event ajax form ie fx fx_methods" npm run-script dist
+
 # do a custom build
 $ MODULES="zepto event data" npm run-script dist
 
