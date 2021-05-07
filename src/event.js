@@ -266,6 +266,10 @@
     }
   })
 
+  $.fn['hover'] = function( fnOver, fnOut ) {
+		return this.mouseenter( fnOver ).mouseleave( fnOut || fnOver );
+	}
+
   $.Event = function(type, props) {
     if (!isString(type)) props = type, type = props.type
     var event = document.createEvent(specialEvents[type] || 'Events'), bubbles = true
